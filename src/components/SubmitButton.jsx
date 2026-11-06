@@ -1,9 +1,20 @@
-// Code SubmitButton Component Here
+function SubmitButton() {
+  function handleEnter() {
+    console.log("Mouse Entering");
+  }
 
-function SubmitButton (){
-    return(
-        <></>
-    )
+  function handleLeave() {
+    console.log("Mouse Exiting");
+  }
+
+  return (
+    <button
+      onMouseEnter={handleEnter}
+      onMouseLeave={handleLeave}
+    >
+      Submit Password
+    </button>
+  );
 }
 
 export default SubmitButton;
